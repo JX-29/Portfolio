@@ -19,14 +19,12 @@ ul
 
 //контейнер для облегчения адаптивной верстки и нормального позиционирования блоков
 .container 
-    width: 1150px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px
-    &_main
+    &_main // контейнер для основной части. Блоки отдаляются друг от друга на все свободное расстояние
         display: flex
-        flex-wrap: wrap
-        justify-content: space-between
-        padding: 0
+        justify-content: space-between  
 
 //импорт блоков
 @import 'base/variables'
@@ -38,6 +36,7 @@ ul
 @import 'blocks/logo'
 @import 'blocks/info'
 @import 'blocks/skills'
+@import 'blocks/adaptive'
 
 
 

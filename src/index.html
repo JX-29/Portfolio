@@ -12,6 +12,7 @@
 </head>
 <body>
     <header class="BG-header">
+        <!-- Контейнер. Обнуляет все внешние отступы и задает внутренние. Используется для мобильной верстки -->
         <div class="container">
             <a class="logo">
                 <div class="logo__wrapper">
@@ -26,8 +27,8 @@
                 <li class="BG-header__social-button button button__social"><a href="" class="BG-header__social-link"><i class="fab fa-github"></i></a></li> 
                 <li class="BG-header__social-button button button__social"><a href="" class="BG-header__social-link"><i class="fab fa-telegram-plane"></i></a></li> 
                 <li class="BG-header__social-button button button__social"><a href="" class="BG-header__social-link"><i class="fas fa-envelope"></i></a></li> 
-                <button class="button button__lets-work BG-header__lets-work">Давайте работать вместе</button>
             </ul>
+            <button class="button button__lets-work BG-header__lets-work">Давайте работать вместе</button>
         </div>
     </header>
     <main class="main">
@@ -37,7 +38,7 @@
                 <section class="info__block info__block_rounding-top info__block_black">
                     <h2 class="info__title">Обо мне</h2>
                     <p class="info__descr">Привет, я Антон, веб-разработчик из Краснодара.
-                        <br><br> Я занимаюсь версткой и разработкой веб-сайтов чтобы облегчить жизнь как заказчику, так и его клиентам.
+                        <br><br> Я занимаюсь версткой и разработкой веб-сайтов чтобы облегчить жизнь как своему заказчику, так и его клиентам.
                         <br><br> На этом сайте вы найдете коллекцию моих работ, разработанных по заказу, а так же несколько личных проектов.  </p>
                     <!-- <div class="info__button-wrapper"><button class="info__button"></button><button class="info__button"></button></div> кнопки для скачивания резюме. Доработать позже -->
                 </section>
@@ -78,69 +79,17 @@
                     <div class="my-works__translucent-box_white"></div>
                     <!-- Пространство с информацией о проекте и кнопками . Занимает 60% карточки -->
                     <div class="my-works__translucent-box_black">
-                        <h2 class="my-works__title">Лэндинг "Юрвест"</h2>
-                        <div class="my-works__skills-wrapper">
-                            <div class="skill skill__card">HTML5</div>
-                            <div class="skill skill__card">CSS3</div>
-                            <div class="skill skill__card">JS</div>
+                        <div class="my-works__text-wrapper">
+                            <h2 class="my-works__title">Лэндинг "Юрвест"</h2>
+                            <div class="my-works__skills-wrapper">
+                                <div class="skill skill__card">HTML5</div>
+                                <div class="skill skill__card">CSS3</div>
+                                <div class="skill skill__card">JS</div>
+                            </div>
                         </div>
                         <ul class="my-works__link-wrapper">
                             <li class="my-works__link"><a href=""><i class="fas fa-link"></i></a></li>
                             <!-- Выводит описание проекта -->
-                            <li class="my-works__link"><a href=""><i class="fas fa-ellipsis-h"></i></a></li>
-                            <li class="my-works__link"><a href=""><i class="fab fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="my-works__card">
-                     <div class="my-works__comment">В разработке</div>
-                    <img src="img/My-works/Card-img-urvest.JPG" alt="Лэндинг Юрвест" class="my-works__img">
-                    <div class="my-works__translucent-box_white"></div>
-                    <div class="my-works__translucent-box_black">
-                        <h2 class="my-works__title">Лэндинг "Юрвест"</h2>
-                        <div class="my-works__skills-wrapper">
-                            <div class="skill skill__card">HTML5</div>
-                            <div class="skill skill__card">CSS3</div>
-                            <div class="skill skill__card">JS</div>
-                        </div>
-                        <ul class="my-works__link-wrapper">
-                            <li class="my-works__link"><a href=""><i class="fas fa-link"></i></a></li>
-                            <li class="my-works__link"><a href=""><i class="fas fa-ellipsis-h"></i></a></li>
-                            <li class="my-works__link"><a href=""><i class="fab fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="my-works__card">
-                     <div class="my-works__comment">В разработке</div>
-                    <img src="img/My-works/Card-img-urvest.JPG" alt="Лэндинг Юрвест" class="my-works__img">
-                    <div class="my-works__translucent-box_white"></div>
-                    <div class="my-works__translucent-box_black">
-                        <h2 class="my-works__title">Лэндинг "Юрвест"</h2>
-                        <div class="my-works__skills-wrapper">
-                            <div class="skill skill__card">HTML5</div>
-                            <div class="skill skill__card">CSS3</div>
-                            <div class="skill skill__card">JS</div>
-                        </div>
-                        <ul class="my-works__link-wrapper">
-                            <li class="my-works__link"><a href=""><i class="fas fa-link"></i></a></li>
-                            <li class="my-works__link"><a href=""><i class="fas fa-ellipsis-h"></i></a></li>
-                            <li class="my-works__link"><a href=""><i class="fab fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="my-works__card">
-                     <div class="my-works__comment">В разработке</div>
-                    <img src="img/My-works/Card-img-urvest.JPG" alt="Лэндинг Юрвест" class="my-works__img">
-                    <div class="my-works__translucent-box_white"></div>
-                    <div class="my-works__translucent-box_black">
-                        <h2 class="my-works__title">Лэндинг "Юрвест"</h2>
-                        <div class="my-works__skills-wrapper">
-                            <div class="skill skill__card">HTML5</div>
-                            <div class="skill skill__card">CSS3</div>
-                            <div class="skill skill__card">JS</div>
-                        </div>
-                        <ul class="my-works__link-wrapper">
-                            <li class="my-works__link"><a href=""><i class="fas fa-link"></i></a></li>
                             <li class="my-works__link"><a href=""><i class="fas fa-ellipsis-h"></i></a></li>
                             <li class="my-works__link"><a href=""><i class="fab fa-github"></i></a></li>
                         </ul>

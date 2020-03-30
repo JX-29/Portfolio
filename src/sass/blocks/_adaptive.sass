@@ -1,0 +1,73 @@
+@media (max-device-width : 1024px)
+    .my-works //на мобильных устройствах блок занимает весь экран, а не половину
+        &__card
+            padding: 60px 30px
+        &__translucent-box
+            &_black
+                width: 100% 
+        &__title
+            font-size: 20px
+            margin-bottom: 10px
+@media (max-device-width : 768px)
+    .main
+        margin-top: calc( 100vh - 40px )
+    .container 
+        width: calc( 100% - 80px )
+        &_main //изменяет расположение блоков основной секции с паралельного на последовательное
+            flex-wrap: wrap
+            justify-content: center
+    .my-works //на мобильных устройствах блок занимает весь экран, а не половину
+        width: 100%
+        &__card
+            height: 280px
+            margin-bottom: 0
+            margin-top: 40px
+        &__title
+            font-size: 20px
+        
+    .info //на мобильных устройствах блок занимает весь экран, а не половину
+        width: 100%
+@media (max-device-width : 550px)
+    .logo // Расположение логотипа по центру
+        margin: 0 auto
+        &__divider
+            margin: 0 auto
+            margin-bottom: 4px
+    .button
+        &__submit
+            margin: 0 auto
+            margin-top: 40px
+    *
+        text-align: center // Расположение всего текста по центру
+    .BG-header
+        // position: absolute // альтарнативный вариант
+        &__title
+            font-size: 40px;
+        &__subtitle
+            font-size: 20px;
+        &__buttons-wrapper
+            margin-top: 40px
+            display: flex
+            justify-content: center
+        &__social-button
+            margin-right: 20px
+        &__lets-work
+            margin-top: 20px
+    .container 
+        width: 100%
+        padding: 5px
+    .my-works //на мобильных устройствах блок занимает весь экран, а не половину
+        &__card
+            padding: 80px 0px
+            height: 320px
+        &__translucent-box
+            &_black
+                width: 80%
+                height: 100%
+                padding: 20px 10px
+        &__title
+            font-size: 20px
+
+
+
+    
