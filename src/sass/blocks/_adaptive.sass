@@ -1,4 +1,12 @@
+@media (max-device-width : 1224px)
+    .button
+        &__download
+            width: 100%
+        &__watch
+            margin-top: 40px
+            width: 100%
 @media (max-device-width : 1024px)
+
     .my-works //на мобильных устройствах блок занимает весь экран, а не половину
         &__card
             padding: 60px 30px
@@ -24,10 +32,9 @@
             margin-top: 40px
         &__title
             font-size: 20px
-        
     .info //на мобильных устройствах блок занимает весь экран, а не половину
         width: 100%
-@media (max-device-width : 550px)
+@media (max-device-width : 550px) 
     .logo // Расположение логотипа по центру
         margin: 0 auto
         &__divider
@@ -37,6 +44,9 @@
         &__submit
             margin: 0 auto
             margin-top: 40px
+        &__lets-work
+            width: 360px
+            margin-top: 20px
     *
         text-align: center // Расположение всего текста по центру
     .BG-header
@@ -51,8 +61,8 @@
             justify-content: center
         &__social-button
             margin-right: 20px
-        &__lets-work
-            margin-top: 20px
+            &:nth-child(3)
+                margin-right: 0px
     .container 
         width: 100%
         padding: 5px
