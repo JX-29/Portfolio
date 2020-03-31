@@ -33,20 +33,22 @@
         height: 100%
         border-radius: $rounding
         z-index: 1
+        object-fit: cover;
     &__translucent-box
 
-        &_white //Свет
+        &_white
+            cursor: pointer
             position: absolute
             border-radius: $rounding
             height: 100%
             min-width: 100%
-            background-color: rgba($white,.6);
+            background-color: rgba($white,.4);
             z-index: 2
         &_black
             border-radius: $rounding
             width: 80%
             height: 100%
-            background-color: rgba($black,.9);
+            background-color: rgba($black,.8);
             z-index: 3
             display: flex
             justify-content: space-between
@@ -69,7 +71,6 @@
     &__link
         font-size: 25px
         margin-left: 30px
-        
         a
             transition: 0.2s linear;
             color: $main-color
@@ -77,4 +78,5 @@
                color: $white 
         &:first-child
             margin-left: 0px
+    
 

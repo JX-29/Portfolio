@@ -13,21 +13,7 @@
 </head>
 <body>
     <header class="BG-header">
-        <!-- Контейнер. Обнуляет все внешние отступы и задает внутренние. Используется для мобильной верстки -->
         <div class="container">
-                <!-- Переключатель с русского на английский. Заменяет основной цвет сайта, меняет русский текст на английский. Доработать если будет время -->
-                <!-- <div class="lang-switch">
-                    <div class="lang-switch__lang ru">
-                        Русский
-                    </div>
-                    <div class="lang-switch__lang eng">
-                        English
-                    </div>
-                    <label class="lang-switch__wrapper">
-                        <input type="switch__checkbox">
-                        <span class="switch__round"></span>
-                    </label>
-                </div> -->
             <h1 class="title title__main BG-header__title fadeInUp wow" data-wow-duration="0.4s">Третьяков Антон</h1>
             <h2 class="title title__subtitle BG-header__subtitle fadeInUp wow" data-wow-duration="0.5s">Junior Frontend Developer</h2>
             <ul class="BG-header__buttons-wrapper">
@@ -41,19 +27,12 @@
     </header>
     <main class="main">
         <div class="container container_main">
-            <!-- Блок с информацией обо мне, моих навыках и контактами -->
             <article class="info fadeInUp wow" data-wow-duration="0.8s">
                 <section class="info__block info__block_rounding-top info__block_black">
                     <h2 class="info__title fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Обо мне</h2>
                     <p class="info__descr fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Привет, я Антон, веб-разработчик из Краснодара.</p>
                     <p class="info__descr fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Я занимаюсь версткой и разработкой веб-сайтов чтобы облегчить жизнь как своему заказчику, так и его клиентам.</p>
                     <p class="info__descr fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">На этом сайте вы найдете коллекцию моих работ, разработанных по заказу, а так же несколько личных проектов.</p>
-                    <!-- Блок с кнопками для скачивания резюме. Скрыт, так как документ с резюме не готов. -->
-                    <!-- <h3 class="info__subtitle fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Мое резюме</h3>
-                    <div class="info__button-wrapper">
-                        <button class="button button__download fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s"><i class="fas fa-file-download"></i>Скачать</button>
-                        <button class="button button__watch fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s"><i class="far fa-eye"></i>Посмотреть</button>
-                    </div> -->
                 </section>
                 <section class="info__block info__block_white">
                     <h2 class="info__title fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Мои навыки</h2>
@@ -75,7 +54,6 @@
                     <a class="info__mytel fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" href="tel:89186642764" type="phone"><i class="fas fa-phone-alt"></i>+7(918)664-27-64</a>
                     <a class="info__mymail fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" href="mailto:anton23490@gmail.com" type="phone"><i class="fas fa-envelope"></i>anton23490@gmail.com</a>
                     <h3 class="info__subtitle fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Обратная связь</h3>
-                    <!-- Контактная форма временно не работает пока не подключить PHP -->
                     <form class="contact-form" id="contact-form" >
                         <div class="contact-form__input-wrapper">
                             <input name="name" type="text" class="contact-form__input contact-form__input_name fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="40" required placeholder="Имя">
@@ -93,14 +71,10 @@
                       </form>
                 </section>
             </article> 
-            <!-- Блок с карточками, содержащие мои работы -->
             <article class="my-works">
-                <!-- Карточка с работой. Занимает четверть от пространства родительского блока -->
                 <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
                      <div class="my-works__comment">В разработке</div>
-                     <!-- Модифицировать карточку, создать класс BG-img для адаптивного отображения картинки -->
                     <img src="img/My-works/Card-img-urvest.JPG" alt="Лэндинг Юрвест" class="my-works__img">
-                    <!-- ссылка на работу при клике на изображение -->
                     <a class="my-works__translucent-box_white" href="#"></a> 
                     <div class="my-works__translucent-box_black">
                         <div class="my-works__text-wrapper">
@@ -120,9 +94,7 @@
                 </section>
                 <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
                     <div class="my-works__comment">В разработке</div>
-                    <!-- Модифицировать карточку, создать класс BG-img для адаптивного отображения картинки -->
                    <img src="img/My-works/Card-img-urvest.JPG" alt="Лэндинг Юрвест" class="my-works__img">
-                   <!-- ссылка на работу при клике на изображение -->
                    <a class="my-works__translucent-box_white" href="#"></a> 
                    <div class="my-works__translucent-box_black">
                        <div class="my-works__text-wrapper">
@@ -142,9 +114,7 @@
                </section>
                <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
                 <div class="my-works__comment">В разработке</div>
-                <!-- Модифицировать карточку, создать класс BG-img для адаптивного отображения картинки -->
                <img src="img/My-works/Card-img-urvest.JPG" alt="Лэндинг Юрвест" class="my-works__img">
-               <!-- ссылка на работу при клике на изображение -->
                <a class="my-works__translucent-box_white" href="#"></a> 
                <div class="my-works__translucent-box_black">
                    <div class="my-works__text-wrapper">
@@ -164,9 +134,7 @@
            </section>
            <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
             <div class="my-works__comment">В разработке</div>
-            <!-- Модифицировать карточку, создать класс BG-img для адаптивного отображения картинки -->
            <img src="img/My-works/Card-img-urvest.JPG" alt="Лэндинг Юрвест" class="my-works__img">
-           <!-- ссылка на работу при клике на изображение -->
            <a class="my-works__translucent-box_white" href="#"></a> 
            <div class="my-works__translucent-box_black">
                <div class="my-works__text-wrapper">
@@ -192,11 +160,3 @@
     <script>new WOW(). init();</script>
 </body>
 </html>
-
-<!-- Дорабавить опционально
-Анимацию увеличения картинки при наведении
-Плавное перемещение к якорю при помощи JS
-Ссылки на работы
-Отправку формы
-
- -->

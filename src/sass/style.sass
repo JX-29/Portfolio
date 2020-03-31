@@ -1,13 +1,13 @@
 
 //шрифт для всего сайта
 * 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif
 //обнуление
 *,*:before,*:after
-	padding: 0;
-	margin: 0;
-	border: 0;
-	box-sizing: border-box;
+	padding: 0
+	margin: 0
+	border: 0
+	box-sizing: border-box
 
 html,body
 	height: 100%;
@@ -19,8 +19,8 @@ ul
 
 //контейнер для облегчения адаптивной верстки и нормального позиционирования блоков
 .container 
-    width: 100%;
-    margin: 0 auto;
+    width: 100%
+    margin: 0 auto
     padding: 20px
     &_main // контейнер для основной части. Блоки отдаляются друг от друга на все свободное расстояние
         display: flex
@@ -29,6 +29,7 @@ ul
 //импорт блоков
 @import 'base/variables'
 @import 'base/mixins'
+@import 'blocks/lang-switch'
 @import 'blocks/BG-header'
 @import 'blocks/buttons'
 @import 'blocks/main'
@@ -36,7 +37,9 @@ ul
 @import 'blocks/logo'
 @import 'blocks/info'
 @import 'blocks/skills'
+@import 'blocks/_contact-form'
 @import 'blocks/adaptive'
+
 
 
 
