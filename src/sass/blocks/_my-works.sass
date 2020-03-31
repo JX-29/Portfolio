@@ -40,7 +40,7 @@
             border-radius: $rounding
             height: 100%
             min-width: 100%
-            background-color: rgba($white,.9);
+            background-color: rgba($white,.6);
             z-index: 2
         &_black
             border-radius: $rounding
@@ -69,10 +69,12 @@
     &__link
         font-size: 25px
         margin-left: 30px
+        
         a
+            transition: 0.2s linear;
             color: $main-color
             &:hover
                color: $white 
         &:first-child
-            margin-left: 0px  
+            margin-left: 0px
 
