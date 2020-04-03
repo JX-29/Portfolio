@@ -1,5 +1,7 @@
-
-//шрифт для всего сайта
+//импорт переменных
+@import 'base/variables'
+@import 'base/mixins'
+//шрифт для всего сайта. Обычно так делать не стоит, но дизайн расчитан только под один шрифт.
 * 
     font-family: 'Montserrat', sans-serif
 //обнуление
@@ -17,18 +19,13 @@ a
 ul
     list-style-type: none
 
-//контейнер для облегчения адаптивной верстки и нормального позиционирования блоков
-.container 
-    width: 100%
-    margin: 0 auto
-    padding: 20px
-    &_main // контейнер для основной части. Блоки отдаляются друг от друга на все свободное расстояние
-        display: flex
-        justify-content: space-between  
+//класс для неотображаемых элементов
+.hidden
+    display: none
+
+
 
 //импорт блоков
-@import 'base/variables'
-@import 'base/mixins'
 @import 'blocks/lang-switch'
 @import 'blocks/BG-header'
 @import 'blocks/buttons'
@@ -37,8 +34,9 @@ ul
 @import 'blocks/logo'
 @import 'blocks/info'
 @import 'blocks/skills'
-@import 'blocks/_contact-form'
+@import 'blocks/contact-form'
 @import 'blocks/adaptive'
+@import 'blocks/container'
 
 
 

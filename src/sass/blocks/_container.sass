@@ -1,0 +1,13 @@
+//контейнер для облегчения адаптивной верстки и нормального позиционирования блоков
+.container 
+    width: 100%
+    margin: 0 auto
+    padding: 20px
+    &__main // контейнер для основной части. Блоки отдаляются друг от друга на все свободное расстояние
+        display: flex
+        justify-content: space-between  
+    &__sections // контейнер для секций. Секции занимают половину экрана и выстраиваются в колонки
+        display: flex
+        flex-direction: column
+        width: calc( 50% - 20px)
+        box-shadow: $shadow

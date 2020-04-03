@@ -6,7 +6,7 @@
             margin-top: 40px
             width: 100%
 @media (max-device-width : 900px)
-    .my-works //на мобильных устройствах блок занимает весь экран, а не половину
+    .my-works
         &__card
             &__translucent-box
                 &_black
@@ -17,7 +17,7 @@
             font-size: 20px
             margin-bottom: 10px
 @media (max-device-width : 1024px)
-    .my-works //на мобильных устройствах блок занимает весь экран, а не половину
+    .my-works
         &__card
             padding: 60px 10px
             
@@ -25,11 +25,14 @@
             font-size: 20px
             margin-bottom: 10px
 @media (max-device-width : 768px)
-    .main
-        margin-top: calc( 100vh - 40px )
+    // На мобильных версиях могут возникнуть проблемы с отображением и резким появлением основной секции (в DevTools все отображается нормально). Чтобы их предотвратить можно использовать эти настройки. Они делают header и main одним целым и main больше не перекрывает header
+    // .BG-header
+    //     position: absolute
+    // .main
+    //     margin-top: calc( 100vh - 80px )
     .container 
         width: calc( 100% - 80px )
-        &_main //изменяет расположение блоков основной секции с паралельного на последовательное
+        &__main //изменяет расположение блоков основной секции с паралельного на последовательное
             flex-wrap: wrap
             justify-content: center
     .my-works //на мобильных устройствах блок занимает весь экран, а не половину
@@ -48,12 +51,12 @@
         &__divider
             margin: 0 auto
             margin-bottom: 4px
-    .button
+    .button 
         &__submit
             margin: 0 auto
             margin-top: 40px
-        &__lets-work
-            width: 360px
+        &__lets-work // небольшой костыль для кнопки. Увеличение ширины позволяет ей выйты за пределы ul и занять новую строку
+            width: 330px
             margin-top: 20px
     *
         text-align: center // Расположение всего текста по центру
@@ -74,7 +77,7 @@
     .container 
         width: 100%
         padding: 0px 5px
-    .my-works //на мобильных устройствах блок занимает весь экран, а не половину
+    .my-works
         &__card
             padding: 80px 0px
             height: 320px
@@ -89,7 +92,7 @@
 @media (max-device-width : 380px) 
     .button
         &__lets-work
-            width: 300px
+            width: 280px
     .info__mymail
         i
             display: none
