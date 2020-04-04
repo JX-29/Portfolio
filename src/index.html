@@ -15,6 +15,21 @@
     <header class="BG-header">
         <!-- Контейнер. Обнуляет все внешние отступы и задает внутренние. Используется для мобильной верстки -->
         <div class="container">
+            <!-- Переключатель языка для сайта. Заменяет русские блоки английскими и наоборот при нажатии на переключатель. Отключает анимацию в в заголовке, так как этот блок находится в зоне видимости посетителя сайта. -->
+            <!-- Кнопка переключения на английский. Класс rus__show_block так как она отображается при русском интерфейсе -->
+            <div class="lang-switch">
+
+                <div class="lang-switch__checkbox">
+                    <input type="checkbox" class="lang-switch__input">
+                    <div class="lang-switch__text rus__show_block">rus</div>
+                    <div class="lang-switch__text eng__hide_block">eng</div>
+                    
+                </div>
+
+            </div>
+            <!-- <button class="button button__lang button__lang_eng rus__show_test">eng</button> -->
+            <!-- Кнопка переключения на русский. Класс eng__show_block так как она отображается при английском интерфейсе -->
+            <!-- <button class="button button__lang button__lang_rus eng__hide_test">rus</button> -->
             <a class="logo">
                 <div class="logo__wrapper">
                     <div class="logo__top">tr</div>
@@ -22,27 +37,16 @@
                     <div class="logo__bot">webdew</div>
                 </div>
             </a>
-                <!-- Переключатель с русского на английский. Заменяет основной цвет сайта, меняет русский текст на английский. Доработать если будет время -->
-                <!-- <div class="lang-switch">
-                    <div class="lang-switch__lang ru">
-                        Русский
-                    </div>
-                    <div class="lang-switch__lang eng">
-                        English
-                    </div>
-                    <label class="lang-switch__wrapper">
-                        <input type="switch__checkbox">
-                        <span class="switch__round"></span>
-                    </label>
-                </div> -->
             
-            <h1 class="title title__main BG-header__title fadeInUp wow" data-wow-duration="0.4s">Третьяков Антон</h1>
+            <h1 class="title title__main BG-header__title rus__show_block fadeInUp wow" data-wow-duration="0.4s">Третьяков Антон</h1>
+            <h1 class="title title__main BG-header__title eng__hide_block fadeInUp wow" data-wow-duration="0.4s">Anton Tretyakov</h1>
             <h2 class="title title__subtitle BG-header__subtitle fadeInUp wow" data-wow-duration="0.5s">Junior Frontend Developer</h2>
             <ul class="BG-header__buttons-wrapper">
-                <li class="BG-header__social-button button button__social fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.2s"><a href="#" class="BG-header__social-link"><i class="fab fa-github"></i></a></li> 
-                <li class="BG-header__social-button button button__social fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.3s"><a href="#" class="BG-header__social-link"><i class="fab fa-telegram-plane"></i></a></li> 
-                <li class="BG-header__social-button button button__social fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s"><a href="#" class="BG-header__social-link"><i class="fas fa-envelope"></i></a></li> 
-                <li><button class="button button__lets-work BG-header__lets-work fadeInUp wow"  data-wow-duration="0.4s" data-wow-delay="0.6s">Давайте работать вместе</button><a href="#lets-work"></a></li>
+                <li class="BG-header__social-button button button__social fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.2s"><a href="#" class="BG-header__social-link"><a href=""><i class="fab fa-github"></i></a></li> 
+                <li class="BG-header__social-button button button__social fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.3s"><a href="#" class="BG-header__social-link"><a href=""><i class="fab fa-telegram-plane"></i></a></li> 
+                <li class="BG-header__social-button button button__social fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s"><a href="#" class="BG-header__social-link"><a href=""><i class="fas fa-envelope"></i></a></li> 
+                <li class="rus__show_block"><button class="button button__lets-work BG-header__lets-work fadeInUp wow"  data-wow-duration="0.4s" data-wow-delay="0.6s">Давайте работать вместе</button><a href="#lets-work"></a></li>
+                <li class="eng__hide_block" ><button class="button button__lets-work BG-header__lets-work fadeInUp wow"  data-wow-duration="0.4s" data-wow-delay="0.6s">Let's work together</button><a href="#lets-work"></a></li>
             </ul>
             
         </div>
@@ -51,13 +55,17 @@
     <main class="main">
         <div class="container container__main">
             <!-- Блок с информацией обо мне, моих навыках и контактами . Занимает около половины экрана в десктопной версии и почти весь экран в мобильной -->
-            <div class="info container__sections fadeInUp wow" data-wow-duration="0.8s">
+            <div class="info fadeInUp wow" data-wow-duration="0.8s">
                 <!-- Используется набор модификаторов для элементов rounding_top скругляет верхние края, а _black задает темный фон и делает текст белым. Этот раздел расчитан на добавление новых блоков в будующем. Модификаторы сделаны для облегчения стилизаци -->
                 <section class="info__block info__block_rounding-top info__block_black">
-                    <h3 class="info__title fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Обо мне</h3>
-                    <p class="info__descr fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Привет, я Антон, веб-разработчик из Краснодара.</p>
-                    <p class="info__descr fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Я занимаюсь версткой и разработкой веб-сайтов чтобы облегчить жизнь как своему заказчику, так и его клиентам.</p>
-                    <p class="info__descr fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">На этом сайте вы найдете коллекцию моих работ, разработанных по заказу, а так же несколько личных проектов.</p>
+                    <h3 class="info__title rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Обо мне</h3>
+                    <h3 class="info__title eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">About me</h3>
+                    <p class="info__descr rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Привет, я Антон, веб-разработчик из Краснодара.</p>
+                    <p class="info__descr eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Hi, I’m Anton, a web developer from Krasnodar, Russia.</p>
+                    <p class="info__descr rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Я занимаюсь версткой и разработкой веб-сайтов чтобы облегчить жизнь как своему заказчику, так и его клиентам.</p>
+                    <p class="info__descr eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">I am engaged in layout and website development to make life easier for both my customer and his clients.</p>
+                    <p class="info__descr rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">На этом сайте вы найдете коллекцию моих работ, разработанных по заказу, а так же несколько личных проектов.</p>
+                    <p class="info__descr eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">On this site you will find a collection of my works, developed by order, as well as several personal projects.</p>
                     <!-- Блок с кнопками для скачивания резюме. Скрыт, так как документ с резюме не готов. -->
                     <!-- <h3 class="info__subtitle fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Мое резюме</h3>
                     <div class="info__button-wrapper">
@@ -66,7 +74,8 @@
                     </div> -->
                 </section>
                 <section class="info__block info__block_white">
-                    <h3 class="info__title fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Мои навыки</h3>
+                    <h3 class="info__title rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Мои навыки</h3>
+                    <h3 class="info__title eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">My skills</h3>
                     <div class="info__wrapper fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">
                         <div class="skill skill__info">HTML5</div>
                         <div class="skill skill__info">CSS3</div>
@@ -76,17 +85,23 @@
                         <div class="skill skill__info">БЭМ</div>
                         <div class="skill skill__info">Bootstrap 4</div>
                         <div class="skill skill__info">Git</div>
-                        <div class="skill skill__info">jQuery</div>
+                        <div class="skill skill__info rus__show_block">Адаптивная верстка</div>
+                        <div class="skill skill__info eng__hide_block">Adaptive layout</div>
+                        <div class="skill skill__info rus__show_block">Валидная верстка</div>
+                        <div class="skill skill__info eng__hide_block">Valid layout</div>
                     </div>
                 </section>
                 <section class="info__block info__block_rounding-bot info__block_black" ><a id="lets-work"></a>
-                    <h3 class="info__title fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Свяжитесь со мной</h3>
-                    <h4 class="info__subtitle fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Мои контакты</h4>
+                    <h3 class="info__title rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Свяжитесь со мной</h3>
+                    <h3 class="info__title eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Contact me</h3>
+                    <h4 class="info__subtitle rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Мои контакты</h4>
+                    <h4 class="info__subtitle eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">My contacts</h4>
                     <a class="info__mytel fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" href="tel:89186642764"><i class="fas fa-phone-alt"></i>+7(918)664-27-64</a>
                     <a class="info__mymail fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" href="mailto:anton23490@gmail.com"><i class="fas fa-envelope"></i>anton23490@gmail.com</a>
-                    <h4 class="info__subtitle fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Обратная связь</h4>
+                    <h4 class="info__subtitle rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Обратная связь</h4>
+                    <h4 class="info__subtitle eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Feedback</h4>
                     <!-- Контактная форма временно не работает пока не подключить PHP -->
-                    <form class="contact-form" id="contact-form" >
+                    <form class="contact-form rus__show_block" id="contact-form" >
                         <div class="contact-form__input-wrapper">
                             <input name="name" type="text" class="contact-form__input contact-form__input_name fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="40" required placeholder="Имя">
                         </div>        
@@ -101,14 +116,39 @@
                         </div>
                         <button class="button button__submit" data-wow-duration="0.4s" data-wow-delay="0.4s fadeInUp wow" type="submit">Отправить</button>
                       </form>
+                      <form class="contact-form eng__hide_block" id="contact-form" >
+                            <div class="contact-form__input-wrapper">
+                                <input name="name" type="text" class="contact-form__input contact-form__input_name fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="40" required placeholder="Name">
+                            </div>        
+                            <div class="contact-form__input-wrapper">
+                                <input name="tel" type="tel" class="contact-form__input contact-form__input_tel fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="20" required placeholder="Phone number">
+                            </div>
+                            <div class="contact-form__input-wrapper"> 
+                            <input name="email" type="email" class="contact-form__input contact-form__input_email fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="80" required placeholder="Email">
+                            </div>
+                            <div class="contact-form__input-wrapper contact-form__input-wrapper_text">
+                                <textarea name="text" class="contact-form__input contact-form__text fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" placeholder="Comments (optional)"></textarea>
+                            </div>
+                            <button class="button button__submit" data-wow-duration="0.4s" data-wow-delay="0.4s fadeInUp wow" type="submit">Submit</button>
+                      </form>
                 </section>
             </div> 
-            <!-- Блок с карточками, содержащие мои работы. Занимает около половины экрана и почти весь в мобильной -->
-            <div class="my-works container__sections">
-                <!-- Карточка с работой. Занимает четверть от пространства родительского блока -->
+            <!-- Блок с карточками, содержащие мои работы. Занимает около половины экрана в десктопной версии и почти весь экран в мобильной -->
+            <div class="my-works">
+                <!-- Карточка с работой. Занимает почти четверть от пространства родительского блока -->
                 <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
+                    <!-- Окно описания. По умолчанию скрыто. При нажатии на "..." воявляется, заслоняя собой карточку. Можно скрыть -->
+                    <div class="my-works__descr-box rus__hide">
+                        <div class="my-works__descr">Дочерний от моего портфолио проект. Здесь находятся мои небольшие проекты, сделанные на чистом JS во время обучения этому языку. Адаптивность отсутствует, так как сенсорное управление не предумотренно.</div>
+                        <button class="button__hide"></button>
+                    </div>
+                    <div class="my-works__descr-box eng__hide_block">
+                        <div class="my-works__descr">A subsidiary of my portfolio project. Here are my small projects made in pure JS while learning this language. There is no adaptability, since touch control is not provided.</div>
+                        <button class="button__hide"></button>
+                    </div>
                     <!-- Заметка о состоянии. Всегда находится сверху по центру -->
                     <div class="my-works__comment my-works__comment_none">В разработке</div>
+                    <div class="my-works__comment my-works__comment_none">In developing</div>
                      <!-- Модифицировать карточку, создать класс BG-img для адаптивного отображения картинки -->
                     <img src="img/My-works/Petlib.JPG" alt="Petlib" class="my-works__img">
                     <!-- ссылка на работу при клике на изображение -->
@@ -123,7 +163,7 @@
                             </div>
                         </div>
                         <ul class="my-works__link-wrapper">
-                            <li class="my-works__link"><a href="https://jx-29.github.io/Petlib"><i class="fas fa-link"></i></a></li>
+                            <li class="my-works__link"><a href="https://jx-29.github.io/Petlib"><i class="fas fa-link"></i></a></li> 
                             <!-- Открывает описание проекта -->
                             <li class="my-works__link"><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
                             <li class="my-works__link"><a href="https://github.com/JX-29/Petlib"><i class="fab fa-github"></i></a></li>
@@ -131,14 +171,24 @@
                     </div>
                 </section>
                 <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
-                    <div class="my-works__comment">В разработке</div>
+                    <div class="my-works__descr-box">
+                        <div class="my-works__descr rus__hide">Мой проект, разработанный для компании "Юрвест", занимающейся юридическими консультациями. Нужен для привлечения клиентов и заказа консультаций. Сайт адаптивен, содержит каталог услуг, модальное окно и слайдер</div>
+                        <button class="button__hide"></button>
+                    </div>
+                    <div class="my-works__descr-box eng__hide_block">
+                        <div class="my-works__descr">My project, developed for the company "Urvest", engaged in legal advice. Needed to attract customers and order advice. The site is responsive, contains a catalog of services, a modal window and a slider</div>
+                        <button class="button__hide"></button>
+                    </div>
+                    <div class="my-works__comment rus__show_block">В разработке</div>
+                    <div class="my-works__comment eng__hide_block">In developing</div>
                     <!-- Модифицировать карточку, создать класс BG-img для адаптивного отображения картинки -->
                    <img src="img/My-works/Card-img-urvest.JPG" alt="Лэндинг Юрвест" class="my-works__img">
                    <!-- ссылка на работу при клике на изображение -->
                    <a class="my-works__translucent-box_white" href="#"></a> 
                    <div class="my-works__translucent-box_black">
                        <div class="my-works__text-wrapper">
-                           <h3 class="my-works__title">Лэндинг "Юрвест"</h3>
+                           <h3 class="my-works__title rus__show_block">Лэндинг "Юрвест"</h3>
+                           <h3 class="my-works__title eng__hide_block">"Urvest" landing page</h3>
                            <div class="my-works__skills-wrapper">
                                <div class="skill skill__card">HTML5</div>
                                <div class="skill skill__card">CSS3</div>
@@ -153,15 +203,24 @@
                    </div>
                 </section>
                 <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
-                
-                <div class="my-works__comment">В разработке</div>
+                <div class="my-works__descr-box rus__hide">
+                    <div class="my-works__descr">Лэндинг для компании "Инком-Трейд", занимающейся поставкой сельскохозяйственной продукции.</div>
+                    <button class="button__hide"></button>
+                </div>
+                <div class="my-works__descr-box eng__hide_block">
+                    <div class="my-works__descr">Landing page for the company "Incom-Trade", engaged in the supply of agricultural products.</div>
+                    <button class="button__hide"></button>
+                </div>
+                <div class="my-works__comment rus__show_block">В разработке</div>
+                <div class="my-works__comment eng__hide_block">In developing</div>
                 <!-- Модифицировать карточку, создать класс BG-img для адаптивного отображения картинки -->
                <img src="img/My-works/Income-trade.JPG" alt="Лендинг Инком-Трейд" class="my-works__img">
                <!-- ссылка на работу при клике на изображение -->
                <a class="my-works__translucent-box_white" href="#"></a> 
                <div class="my-works__translucent-box_black">
                    <div class="my-works__text-wrapper">
-                       <h3 class="my-works__title">Лэндинг "Инком-Трейд"</h3>
+                       <h3 class="my-works__title rus__show_block">Лэндинг "Инком-Трейд"</h3>
+                       <h3 class="my-works__title eng__hide_block">"Incom-Trade" landing page</h3>
                        <div class="my-works__skills-wrapper">
                            <div class="skill skill__card">HTML5</div>
                            <div class="skill skill__card">CSS3</div>
@@ -171,7 +230,7 @@
                    <ul class="my-works__link-wrapper">
                        <li class="my-works__link"><a href="income-trade-krd.ru"><i class="fas fa-link"></i></a></li>
                        <li class="my-works__link"><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
-                       <li class="my-works__link"><a href="#"><i class="fab fa-github"></i></a></li>
+                       <li class="my-works__link"><a href="https://github.com/JX-29/Income-trade"><i class="fab fa-github"></i></a></li>
                    </ul>
                </div>
                 </section>
@@ -179,6 +238,7 @@
         </div>
     </main>
     <script src="JS/wow.min.js"></script>
+    <script src="JS/changeLang.js"></script>
     <script>new WOW(). init();</script>
 </body>
 </html>
