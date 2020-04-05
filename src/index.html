@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tretyakov Anton | Junior Frontend Developer</title>
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a0917489ee.js" crossorigin="anonymous"></script>
@@ -18,14 +18,11 @@
                 <!-- Переключатель языка для сайта. Заменяет русские блоки английскими и наоборот при нажатии на переключатель. -->
                 <!-- Кнопка переключения на английский. Класс rus__show_block так как она отображается при русском интерфейсе -->
                 <div class="lang-switch">
-
                     <div class="lang-switch__checkbox">
                         <input type="checkbox" class="lang-switch__input">
                         <div class="lang-switch__text rus__show_block">rus</div>
                         <div class="lang-switch__text eng__hide_block">eng</div>
-                        
                     </div>
-
                 </div>
                 <a class="logo" href="https://github.com/JX-29" target="_blank">
                     <div class="logo__wrapper">
@@ -34,7 +31,6 @@
                         <div class="logo__bot">webdew</div>
                     </div>
                 </a>
-                
                 <h1 class="title title__main BG-header__title rus__show_block fadeInUp wow" data-wow-duration="0.4s">Третьяков Антон</h1>
                 <h1 class="title title__main BG-header__title eng__hide_block fadeInUp wow" data-wow-duration="0.4s">Anton Tretyakov</h1>
                 <h2 class="title title__subtitle BG-header__subtitle fadeInUp wow" data-wow-duration="0.5s">Junior Frontend Developer</h2>
@@ -45,7 +41,6 @@
                     <li class="rus__show_block"><a class="button button__lets-work BG-header__lets-work fadeInUp wow" href="#lets-work"  data-wow-duration="1s">Давайте работать вместе</a></li>
                     <li class="eng__hide_block" ><a class="button button__lets-work BG-header__lets-work fadeInUp wow" href="#lets-work" data-wow-duration="1s">Let's work together</a></li>
                 </ul>
-                
             </div>
         </header>
         <!-- Основной блок. Всегда находится в зоне видимости пользователя. Перекрывает собой Header с его заголовками и кнопками. Использует градиент для плавного исчезновения -->
@@ -139,7 +134,6 @@
                             </div>
                             <button class="button button__submit eng__hide_block  fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" type="submit">Submit</button>
                         </form>
-
                     </section>
                 </div> 
                 <!-- Блок с карточками, содержащие мои работы. Занимает около половины экрана в десктопной версии и почти весь экран в мобильной -->
@@ -168,8 +162,8 @@
                         </div>
                     </section>
                     <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
-                        <div class="my-works__comment rus__show_block">В разработке</div>
-                        <div class="my-works__comment eng__hide_block">In developing</div>
+                    <div class="my-works__comment rus__show_block">В разработке</div>
+                    <div class="my-works__comment eng__hide_block">In developing</div>
                     <img src="img/My-works/Card-img-urvest.JPG" alt="Лэндинг Юрвест" class="my-works__img">
                     <!-- ссылка на работу при клике на изображение -->
                     <a class="my-works__translucent-box_white" target="_blank" href="http://юрвест-право.рф/"></a> 
@@ -190,26 +184,26 @@
                     </div>
                     </section>
                     <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
-                    <div class="my-works__comment rus__show_block">В разработке</div>
-                    <div class="my-works__comment eng__hide_block">In developing</div>
-                <img src="img/My-works/Income-trade.JPG" alt="Лендинг Инком-Трейд" class="my-works__img">
-                <!-- ссылка на работу при клике на изображение -->
-                <a class="my-works__translucent-box_white" href="income-trade-krd.ru" target="_blank"></a> 
-                <div class="my-works__translucent-box_black">
-                    <div class="my-works__text-wrapper">
-                        <h3 class="my-works__title rus__show_block">Лэндинг "Инком-Трейд"</h3>
-                        <h3 class="my-works__title eng__hide_block">"Incom-Trade" landing page</h3>
-                        <div class="my-works__skills-wrapper">
-                            <div class="skill skill__card">HTML5</div>
-                            <div class="skill skill__card">CSS3</div>
-                            <div class="skill skill__card">JS</div>
+                        <div class="my-works__comment rus__show_block">В разработке</div>
+                        <div class="my-works__comment eng__hide_block">In developing</div>
+                        <img src="img/My-works/Income-trade.JPG" alt="Лендинг Инком-Трейд" class="my-works__img">
+                        <!-- ссылка на работу при клике на изображение -->
+                        <a class="my-works__translucent-box_white" href="income-trade-krd.ru" target="_blank"></a> 
+                        <div class="my-works__translucent-box_black">
+                            <div class="my-works__text-wrapper">
+                                <h3 class="my-works__title rus__show_block">Лэндинг "Инком-Трейд"</h3>
+                                <h3 class="my-works__title eng__hide_block">"Incom-Trade" landing page</h3>
+                                <div class="my-works__skills-wrapper">
+                                    <div class="skill skill__card">HTML5</div>
+                                    <div class="skill skill__card">CSS3</div>
+                                    <div class="skill skill__card">JS</div>
+                                </div>
+                            </div>
+                            <ul class="my-works__link-wrapper">
+                                <li class="my-works__link"><a class="button button__card" href="income-trade-krd.ru" target="_blank"><i class="fas fa-link"></i></a></li>
+                                <li class="my-works__link"><a class="button button__card" href="https://github.com/JX-29/Income-trade" target="_blank"><i class="fab fa-github"></i></a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <ul class="my-works__link-wrapper">
-                        <li class="my-works__link"><a class="button button__card" href="income-trade-krd.ru" target="_blank"><i class="fas fa-link"></i></a></li>
-                        <li class="my-works__link"><a class="button button__card" href="https://github.com/JX-29/Income-trade" target="_blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
                     </section>
                 </div>
             </div>
@@ -221,10 +215,3 @@
     </body>
 </html>
 
-<!-- Дорабавить опционально
-Анимацию увеличения картинки при наведении
-Плавное перемещение к якорю при помощи JS
-Ссылки на работы
-Отправку формы
-
- -->
