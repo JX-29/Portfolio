@@ -15,7 +15,7 @@
     <header class="BG-header">
         <!-- Контейнер. Обнуляет все внешние отступы и задает внутренние. Используется для мобильной верстки -->
         <div class="container">
-            <!-- Переключатель языка для сайта. Заменяет русские блоки английскими и наоборот при нажатии на переключатель. Отключает анимацию в в заголовке, так как этот блок находится в зоне видимости посетителя сайта. -->
+            <!-- Переключатель языка для сайта. Заменяет русские блоки английскими и наоборот при нажатии на переключатель. -->
             <!-- Кнопка переключения на английский. Класс rus__show_block так как она отображается при русском интерфейсе -->
             <div class="lang-switch">
 
@@ -27,10 +27,7 @@
                 </div>
 
             </div>
-            <!-- <button class="button button__lang button__lang_eng rus__show_test">eng</button> -->
-            <!-- Кнопка переключения на русский. Класс eng__show_block так как она отображается при английском интерфейсе -->
-            <!-- <button class="button button__lang button__lang_rus eng__hide_test">rus</button> -->
-            <a class="logo">
+            <a class="logo" href="https://github.com/JX-29" target="_blank">
                 <div class="logo__wrapper">
                     <div class="logo__top">tr</div>
                     <div class="logo__divider"></div>
@@ -42,11 +39,11 @@
             <h1 class="title title__main BG-header__title eng__hide_block fadeInUp wow" data-wow-duration="0.4s">Anton Tretyakov</h1>
             <h2 class="title title__subtitle BG-header__subtitle fadeInUp wow" data-wow-duration="0.5s">Junior Frontend Developer</h2>
             <ul class="BG-header__buttons-wrapper">
-                <li class="BG-header__social-button button button__social fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.2s"><a href="#" class="BG-header__social-link"><a href=""><i class="fab fa-github"></i></a></li> 
-                <li class="BG-header__social-button button button__social fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.3s"><a href="#" class="BG-header__social-link"><a href=""><i class="fab fa-telegram-plane"></i></a></li> 
-                <li class="BG-header__social-button button button__social fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s"><a href="#" class="BG-header__social-link"><a href=""><i class="fas fa-envelope"></i></a></li> 
-                <li class="rus__show_block"><button class="button button__lets-work BG-header__lets-work fadeInUp wow"  data-wow-duration="0.4s" data-wow-delay="0.6s">Давайте работать вместе</button><a href="#lets-work"></a></li>
-                <li class="eng__hide_block" ><button class="button button__lets-work BG-header__lets-work fadeInUp wow"  data-wow-duration="0.4s" data-wow-delay="0.6s">Let's work together</button><a href="#lets-work"></a></li>
+                <li class="BG-header__social-button button button__social fadeInUp wow" data-wow-duration="0.4s"><a target="_blank" href="https://github.com/JX-29" class="BG-header__social-link"><i class="fab fa-github"></i></a></li> 
+                <li class="BG-header__social-button button button__social fadeInUp wow" data-wow-duration="0.6s"><a target="_blank"  href="https://t.me/WeAreCollective" class="BG-header__social-link"><i class="fab fa-telegram-plane"></i></a></li> 
+                <li class="BG-header__social-button button button__social fadeInUp wow" data-wow-duration="0.8s"><a target="_blank" href="mailto:anton23490@gmail.com" class="BG-header__social-link"><i class="fas fa-envelope"></i></a></li> 
+                <li class="rus__show_block"><a class="button button__lets-work BG-header__lets-work fadeInUp wow" href="#lets-work"  data-wow-duration="1s">Давайте работать вместе</a></li>
+                <li class="eng__hide_block" ><a class="button button__lets-work BG-header__lets-work fadeInUp wow" href="#lets-work" data-wow-duration="1s">Let's work together</a></li>
             </ul>
             
         </div>
@@ -82,7 +79,9 @@
                         <div class="skill skill__info">Javascript</div>
                         <div class="skill skill__info">SASS</div>
                         <div class="skill skill__info">SCSS</div>
-                        <div class="skill skill__info">БЭМ</div>
+                        <div class="skill skill__info rus__show_block">БЭМ</div>
+                        <div class="skill skill__info eng__hide_block">BEM</div>
+                        <div class="skill skill__info">SQL</div>
                         <div class="skill skill__info">Bootstrap 4</div>
                         <div class="skill skill__info">Git</div>
                         <div class="skill skill__info rus__show_block">Адаптивная верстка</div>
@@ -101,58 +100,62 @@
                     <h4 class="info__subtitle rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Обратная связь</h4>
                     <h4 class="info__subtitle eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Feedback</h4>
                     <!-- Контактная форма временно не работает пока не подключить PHP -->
-                    <form class="contact-form rus__show_block" id="contact-form" >
+                    <form class="contact-form rus__show_block" id="contact-form_rus" >
+                        <!-- Сообщение после отправки формы. На доработке -->
+                        <!-- <div class="contact-form__thanks-box contact-form__thanks-box_show">
+                            <div class="contact-form__checkmark"><i class="fas fa-check"></i></div>
+                            <h3 class="contact-form__title">Спасибо!</h3>
+                            <p class="contact-form__descr">К сожалению, форма пока что не работает... Но мне все равно приятно, что вы ей воспользовались :) 
+                            </p>
+                            <p class="contact-form__descr">Может, вы воспользуетесь контактами выше для связи со мной?</p>
+                            <button class="button button__submit button__submit_hide button__submit_center rus__show_block">Подождите... Я хочу написать еще раз!</button>
+                        </div> -->
                         <div class="contact-form__input-wrapper">
-                            <input name="name" type="text" class="contact-form__input contact-form__input_name fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="40" required placeholder="Имя">
+                            <input name="name" type="text" class="contact-form__input contact-form__input_name rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="40" required placeholder="Имя">
                         </div>        
                         <div class="contact-form__input-wrapper">
-                            <input name="tel" type="tel" class="contact-form__input contact-form__input_tel fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="20" required placeholder="Телефон">
+                            <input name="tel" type="tel" class="contact-form__input contact-form__input_tel  rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="20" required placeholder="Телефон">
                         </div>
                         <div class="contact-form__input-wrapper"> 
-                           <input name="email" type="email" class="contact-form__input contact-form__input_email fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="80" required placeholder="Email">
+                           <input name="email" type="email" class="contact-form__input contact-form__input_email rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="80" required placeholder="Email">
                         </div>
-                        <div class="contact-form__input-wrapper contact-form__input-wrapper_text">
-                            <textarea name="text" class="contact-form__input contact-form__text fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" placeholder="Комментарий (по желанию)"></textarea>
+                        <div class="contact-form__input-wrapper rus__show_block contact-form__input-wrapper_text">
+                            <textarea name="text" class="contact-form__input contact-form__text  fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" placeholder="Комментарий (по желанию)"></textarea>
                         </div>
-                        <button class="button button__submit" data-wow-duration="0.4s" data-wow-delay="0.4s fadeInUp wow" type="submit">Отправить</button>
+                        <button class="button button__submit button__submit_show rus__show_block  fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s type="submit">Отправить</button>
+
+                        
+                        <button class="button button__submit eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s type="submit">Submit</button>
                       </form>
-                      <form class="contact-form eng__hide_block" id="contact-form" >
-                            <div class="contact-form__input-wrapper">
-                                <input name="name" type="text" class="contact-form__input contact-form__input_name fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="40" required placeholder="Name">
-                            </div>        
-                            <div class="contact-form__input-wrapper">
-                                <input name="tel" type="tel" class="contact-form__input contact-form__input_tel fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="20" required placeholder="Phone number">
-                            </div>
-                            <div class="contact-form__input-wrapper"> 
-                            <input name="email" type="email" class="contact-form__input contact-form__input_email fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="80" required placeholder="Email">
-                            </div>
-                            <div class="contact-form__input-wrapper contact-form__input-wrapper_text">
-                                <textarea name="text" class="contact-form__input contact-form__text fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" placeholder="Comments (optional)"></textarea>
-                            </div>
-                            <button class="button button__submit" data-wow-duration="0.4s" data-wow-delay="0.4s fadeInUp wow" type="submit">Submit</button>
-                      </form>
+                    <form class="contact-form eng__hide_block" id="contact-form_eng" >
+                        <div class="contact-form__input-wrapper">
+                            <input name="name" type="text" class="contact-form__input contact-form__input_name eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="40" required placeholder="Name">
+                        </div>        
+                        <div class="contact-form__input-wrapper">
+                            <input name="tel" type="tel" class="contact-form__input contact-form__input_tel  eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="20" required placeholder="Phone number">
+                        </div>
+                        <div class="contact-form__input-wrapper"> 
+                            <input name="email" type="email" class="contact-form__input contact-form__input_email eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="80" required placeholder="Email">
+                        </div>
+                        <div class="contact-form__input-wrapper eng__hide_block contact-form__input-wrapper_text">
+                            <textarea name="text" class="contact-form__input contact-form__text fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" placeholder="Comments (optional)"></textarea>
+                        </div>
+                        <button class="button button__submit eng__hide_block  fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s type="submit">Submit</button>
+                    </form>
+
                 </section>
             </div> 
             <!-- Блок с карточками, содержащие мои работы. Занимает около половины экрана в десктопной версии и почти весь экран в мобильной -->
             <div class="my-works">
                 <!-- Карточка с работой. Занимает почти четверть от пространства родительского блока -->
                 <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
-                    <!-- Окно описания. По умолчанию скрыто. При нажатии на "..." воявляется, заслоняя собой карточку. Можно скрыть -->
-                    <div class="my-works__descr-box rus__hide">
-                        <div class="my-works__descr">Дочерний от моего портфолио проект. Здесь находятся мои небольшие проекты, сделанные на чистом JS во время обучения этому языку. Адаптивность отсутствует, так как сенсорное управление не предумотренно.</div>
-                        <button class="button__hide"></button>
-                    </div>
-                    <div class="my-works__descr-box eng__hide_block">
-                        <div class="my-works__descr">A subsidiary of my portfolio project. Here are my small projects made in pure JS while learning this language. There is no adaptability, since touch control is not provided.</div>
-                        <button class="button__hide"></button>
-                    </div>
                     <!-- Заметка о состоянии. Всегда находится сверху по центру -->
-                    <div class="my-works__comment my-works__comment_none">В разработке</div>
-                    <div class="my-works__comment my-works__comment_none">In developing</div>
+                    <div class="my-works__comment my-works__comment_none rus__show_block">В разработке</div>
+                    <div class="my-works__comment my-works__comment_none eng__hide_block">In developing</div>
                      <!-- Модифицировать карточку, создать класс BG-img для адаптивного отображения картинки -->
                     <img src="img/My-works/Petlib.JPG" alt="Petlib" class="my-works__img">
                     <!-- ссылка на работу при клике на изображение -->
-                    <a class="my-works__translucent-box_white" href="#"></a> 
+                    <a target="_blank" class="my-works__translucent-box_white" href="https://jx-29.github.io/Petlib"></a> 
                     <div class="my-works__translucent-box_black">
                         <div class="my-works__text-wrapper">
                             <h3 class="my-works__title">Petlib</h3>
@@ -163,28 +166,18 @@
                             </div>
                         </div>
                         <ul class="my-works__link-wrapper">
-                            <li class="my-works__link"><a href="https://jx-29.github.io/Petlib"><i class="fas fa-link"></i></a></li> 
-                            <!-- Открывает описание проекта -->
-                            <li class="my-works__link"><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
-                            <li class="my-works__link"><a href="https://github.com/JX-29/Petlib"><i class="fab fa-github"></i></a></li>
+                            <li class="my-works__link"><a class="button button__card" href="https://jx-29.github.io/Petlib" target="_blank"><i class="fas fa-link"></i></a></li> 
+                            <li class="my-works__link"><a class="button button__card" href="https://jx-29.github.io/Petlib" target="_blank"><i class="fab fa-github"></i></a></li>
                         </ul>
                     </div>
                 </section>
                 <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
-                    <div class="my-works__descr-box">
-                        <div class="my-works__descr rus__hide">Мой проект, разработанный для компании "Юрвест", занимающейся юридическими консультациями. Нужен для привлечения клиентов и заказа консультаций. Сайт адаптивен, содержит каталог услуг, модальное окно и слайдер</div>
-                        <button class="button__hide"></button>
-                    </div>
-                    <div class="my-works__descr-box eng__hide_block">
-                        <div class="my-works__descr">My project, developed for the company "Urvest", engaged in legal advice. Needed to attract customers and order advice. The site is responsive, contains a catalog of services, a modal window and a slider</div>
-                        <button class="button__hide"></button>
-                    </div>
                     <div class="my-works__comment rus__show_block">В разработке</div>
                     <div class="my-works__comment eng__hide_block">In developing</div>
                     <!-- Модифицировать карточку, создать класс BG-img для адаптивного отображения картинки -->
                    <img src="img/My-works/Card-img-urvest.JPG" alt="Лэндинг Юрвест" class="my-works__img">
                    <!-- ссылка на работу при клике на изображение -->
-                   <a class="my-works__translucent-box_white" href="#"></a> 
+                   <a class="my-works__translucent-box_white" target="_blank" href="http://юрвест-право.рф/"></a> 
                    <div class="my-works__translucent-box_black">
                        <div class="my-works__text-wrapper">
                            <h3 class="my-works__title rus__show_block">Лэндинг "Юрвест"</h3>
@@ -196,27 +189,18 @@
                            </div>
                        </div>
                        <ul class="my-works__link-wrapper">
-                           <li class="my-works__link"><a href="http://юрвест-право.рф/"><i class="fas fa-link"></i></a></li>
-                           <li class="my-works__link"><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
-                           <li class="my-works__link"><a href="https://github.com/JX-29/Urvest"><i class="fab fa-github"></i></a></li>
+                           <li class="my-works__link"><a class="button button__card" href="http://юрвест-право.рф/" target="_blank"><i class="fas fa-link"></i></a></li>
+                           <li class="my-works__link"><a class="button button__card" href="https://github.com/JX-29/Urvest" target="_blank"><i class="fab fa-github"></i></a></li>
                        </ul>
                    </div>
                 </section>
                 <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
-                <div class="my-works__descr-box rus__hide">
-                    <div class="my-works__descr">Лэндинг для компании "Инком-Трейд", занимающейся поставкой сельскохозяйственной продукции.</div>
-                    <button class="button__hide"></button>
-                </div>
-                <div class="my-works__descr-box eng__hide_block">
-                    <div class="my-works__descr">Landing page for the company "Incom-Trade", engaged in the supply of agricultural products.</div>
-                    <button class="button__hide"></button>
-                </div>
                 <div class="my-works__comment rus__show_block">В разработке</div>
                 <div class="my-works__comment eng__hide_block">In developing</div>
                 <!-- Модифицировать карточку, создать класс BG-img для адаптивного отображения картинки -->
                <img src="img/My-works/Income-trade.JPG" alt="Лендинг Инком-Трейд" class="my-works__img">
                <!-- ссылка на работу при клике на изображение -->
-               <a class="my-works__translucent-box_white" href="#"></a> 
+               <a class="my-works__translucent-box_white" href="income-trade-krd.ru" target="_blank"></a> 
                <div class="my-works__translucent-box_black">
                    <div class="my-works__text-wrapper">
                        <h3 class="my-works__title rus__show_block">Лэндинг "Инком-Трейд"</h3>
@@ -228,9 +212,8 @@
                        </div>
                    </div>
                    <ul class="my-works__link-wrapper">
-                       <li class="my-works__link"><a href="income-trade-krd.ru"><i class="fas fa-link"></i></a></li>
-                       <li class="my-works__link"><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
-                       <li class="my-works__link"><a href="https://github.com/JX-29/Income-trade"><i class="fab fa-github"></i></a></li>
+                       <li class="my-works__link"><a class="button button__card" href="income-trade-krd.ru" target="_blank"><i class="fas fa-link"></i></a></li>
+                       <li class="my-works__link"><a class="button button__card" href="https://github.com/JX-29/Income-trade" target="_blank"><i class="fab fa-github"></i></a></li>
                    </ul>
                </div>
                 </section>
@@ -239,6 +222,7 @@
     </main>
     <script src="JS/wow.min.js"></script>
     <script src="JS/changeLang.js"></script>
+    <script src="JS/smooth.js"></script>
     <script>new WOW(). init();</script>
 </body>
 </html>

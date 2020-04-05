@@ -48,6 +48,9 @@
             min-width: 100%
             background-color: rgba($white,.4);
             z-index: 2
+            &:hover
+                background-color: rgba($white,.2);
+                transition: 0.2s linear
         &_black
             border-radius: $rounding
             width: 80%
@@ -75,12 +78,20 @@
     &__link
         font-size: 25px
         margin-left: 30px
-        a
-            transition: 0.2s linear;
-            color: $main-color
-            &:hover
-               color: $white 
         &:first-child
-            margin-left: 0px
+            margin-left: 0px    
+    &__descr-box
+        width: 100%
+        height: 100%
+        border-radius: $rounding
+        background-color: $black
+        position: absolute
+        z-index: 9
+        color: $white
+        padding: 80px
+        &_hide
+            display: none
+        &_show
+            display: block
     
 
