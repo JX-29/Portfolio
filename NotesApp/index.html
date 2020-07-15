@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NotesApp</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a0917489ee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<main class="notes-app">
+    <div class="sidebar">
+        <div class="burger">
+            <div class="burger__item"></div>
+            <div class="burger__item"></div>
+            <div class="burger__item"></div>
+        </div>
+        <ul class="sidebar__list">
+            <ul class="sidebar__note-wrapper">
+            </ul>
+            <li class="sidebar__add "><span class="note__mark note__mark_plus"><i class="fas fa-plus"></i></span><span class="note__name">Add note</span></li>
+        </ul>
+    </div>
+    <div class="notes-details">
+        <div class="notes-details__blank notes-details__blank_active">
+            You have no note details<br>
+            <span>(Select a note or create a new one)</span>
+        </div>
+        <div class="notes-details__filled">
+            <div class="notes-details__title-edit-wrapper">
+                <div class="notes-details__title-wrapper">
+                </div>
+                <div class="notes-details__edit-title"><i class="fas fa-pen"></i></div>
+            </div>
+            <form class="notes-details__title-input-wrapper  notes-details__title-input-wrapper_inactive">
+                <input type="text" class="notes-details__input" placeholder="New note name">
+                <button class="notes-details__save" type="submit">Save changes</button>
+                <div class="notes-details__cancel">Cancel</div>
+            </form>
+            <ul class="notes-details__list">
+                <ul class="notes-details__items">
+                </ul>
+                <li class="notes-details__add notes-details__add_active"><span class="note__mark note__mark_plus"><i class="fas fa-plus"></i></span><span class="note__name">New detail</span></li>
+                <form class="notes-details__add-wrapper">
+                    <input type="text" class="notes-details__input-detail" placeholder="New note name">
+                    <button class="notes-details__save-detail" type="submit">Save changes</button>
+                    <div class="notes-details__cancel-detail">Cancel</div>
+                </form>
+            </ul>
+        </div>
+    </div>
+    <form class="popup">
+        <input type="text" class="popup__input" placeholder="Note name">
+        <div class="popup__colors">
+            <div class="popup__color-round popup__color-round_blue" onclick="selectColor(event)" id="blue"></div>
+            <div class="popup__color-round popup__color-round_darkblue" onclick="selectColor(event)" id="darkblue"></div>
+            <div class="popup__color-round popup__color-round_lightgreen" onclick="selectColor(event)" id="lightgreen"></div>
+            <div class="popup__color-round popup__color-round_orange" onclick="selectColor(event)" id="orange"></div>
+            <div class="popup__color-round popup__color-round_pink" onclick="selectColor(event)" id="pink"></div>
+            <div class="popup__color-round popup__color-round_red" onclick="selectColor(event)" id="red"></div>
+            <div class="popup__color-round popup__color-round_violate" onclick="selectColor(event)" id="violate"></div>
+            <div class="popup__color-round popup__color-round_yellow" onclick="selectColor(event)" id="yellow"></div>
+        </div>
+        <button type="submit" class="popup__button">Add</button>
+        <div class="popup__cross"><i class="fas fa-times"></i></div>
+    </form>
+</main>
+<script src="JS/popup.js"></script>
+<script src="JS/burger.js"></script>
+<script src="JS/note.js"></script>
+</body>
+
+</html>
+
