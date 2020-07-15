@@ -1,11 +1,14 @@
-@media (max-device-width : 1224px)
+@media (min-device-width : 1224px)
+    .container
+        width: 1224px
+@media (max-width : 1180px)
     .button
         &__download
             width: 100%
         &__watch
             margin-top: 40px
             width: 100%
-@media (max-device-width : 900px)
+@media (max-width : 900px)
     .my-works
         &__card
             &__translucent-box
@@ -16,7 +19,7 @@
         &__title
             font-size: 20px
             margin-bottom: 10px
-@media (max-device-width : 1024px)
+@media (max-width : 1024px)
     .my-works
         &__card
             padding: 60px 10px
@@ -24,12 +27,11 @@
         &__title
             font-size: 20px
             margin-bottom: 10px
-@media (max-device-width : 768px)
-    // На мобильных версиях могут возникнуть проблемы с отображением и резким появлением основной секции (в DevTools все отображается нормально). Чтобы их предотвратить можно использовать эти настройки. Они делают header и main одним целым и main больше не перекрывает header
-    // .BG-header
-    //     position: absolute
-    // .main
-    //     margin-top: calc( 100vh - 80px )
+@media (max-width : 768px)
+    .BG-header
+        position: absolute
+    .main
+        margin-top: calc( 100vh - 80px )
     .container 
         width: calc( 100% - 80px )
         &__main //изменяет расположение блоков основной секции с паралельного на последовательное

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tretyakov Anton | Junior Frontend Developer</title>
     <link rel="stylesheet" href="css/font.css">
+    <link rel="shortcut icon" href="icons/TR_logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css" type="text/css">
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
@@ -13,10 +14,7 @@
 </head>
     <body>
         <header class="BG-header">
-            <!-- Контейнер. Обнуляет все внешние отступы и задает внутренние. Используется для мобильной верстки -->
             <div class="container">
-                <!-- Переключатель языка для сайта. Заменяет русские блоки английскими и наоборот при нажатии на переключатель. -->
-                <!-- Кнопка переключения на английский. Класс rus__show_block так как она отображается при русском интерфейсе -->
                 <div class="lang-switch">
                     <div class="lang-switch__checkbox">
                         <input type="checkbox" class="lang-switch__input">
@@ -43,12 +41,9 @@
                 </ul>
             </div>
         </header>
-        <!-- Основной блок. Всегда находится в зоне видимости пользователя. Перекрывает собой Header с его заголовками и кнопками. Использует градиент для плавного исчезновения -->
         <main class="main">
-            <div class="container container__main">
-                <!-- Блок с информацией обо мне, моих навыках и контактами . Занимает около половины экрана в десктопной версии и почти весь экран в мобильной -->
+            <div class="container container_main">
                 <div class="info fadeInUp wow" data-wow-duration="0.8s">
-                    <!-- Используется набор модификаторов для элементов rounding_top скругляет верхние края, а _black задает темный фон и делает текст белым. Этот раздел расчитан на добавление новых блоков в будующем. Модификаторы сделаны для облегчения стилизаци -->
                     <section class="info__block info__block_rounding-top info__block_black">
                         <h3 class="info__title rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Обо мне</h3>
                         <h3 class="info__title eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">About me</h3>
@@ -58,12 +53,6 @@
                         <p class="info__descr eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">I am engaged in layout and website development to make life easier for both my customer and his clients.</p>
                         <p class="info__descr rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">На этом сайте вы найдете коллекцию моих работ, разработанных по заказу, а так же несколько личных проектов.</p>
                         <p class="info__descr eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">On this site you will find a collection of my works, developed by order, as well as several personal projects.</p>
-                        <!-- Блок с кнопками для скачивания резюме. Скрыт, так как документ с резюме не готов. -->
-                        <!-- <h3 class="info__subtitle fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Мое резюме</h3>
-                        <div class="info__button-wrapper">
-                            <button class="button button__download fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s"><i class="fas fa-file-download"></i>Скачать</button>
-                            <button class="button button__watch fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s"><i class="far fa-eye"></i>Посмотреть</button>
-                        </div> -->
                     </section>
                     <section class="info__block info__block_white">
                         <h3 class="info__title rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Мои навыки</h3>
@@ -94,17 +83,7 @@
                         <a class="info__mymail fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" href="mailto:anton23490@gmail.com"><i class="fas fa-envelope"></i>anton23490@gmail.com</a>
                         <h4 class="info__subtitle rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Обратная связь</h4>
                         <h4 class="info__subtitle eng__hide_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s">Feedback</h4>
-                        <!-- Контактная форма временно не работает пока не подключить PHP -->
-                        <form class="contact-form rus__show_block" id="contact-form_rus" >
-                            <!-- Сообщение после отправки формы. На доработке -->
-                            <!-- <div class="contact-form__thanks-box contact-form__thanks-box_show">
-                                <div class="contact-form__checkmark"><i class="fas fa-check"></i></div>
-                                <h3 class="contact-form__title">Спасибо!</h3>
-                                <p class="contact-form__descr">К сожалению, форма пока что не работает... Но мне все равно приятно, что вы ей воспользовались :) 
-                                </p>
-                                <p class="contact-form__descr">Может, вы воспользуетесь контактами выше для связи со мной?</p>
-                                <button class="button button__submit button__submit_hide button__submit_center rus__show_block">Подождите... Я хочу написать еще раз!</button>
-                            </div> -->
+                        <form action="https://formspree.io/xzbjkaye" method="POST" class="contact-form rus__show_block" id="contact-form_rus" >
                             <div class="contact-form__input-wrapper">
                                 <input name="name" type="text" class="contact-form__input contact-form__input_name rus__show_block fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" maxlength="40" required placeholder="Имя">
                             </div>        
@@ -135,20 +114,14 @@
                             <button class="button button__submit eng__hide_block  fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.4s" type="submit">Submit</button>
                         </form>
                     </section>
-                </div> 
-                <!-- Блок с карточками, содержащие мои работы. Занимает около половины экрана в десктопной версии и почти весь экран в мобильной -->
+                </div>
                 <div class="my-works">
                     <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
-                        <!-- Заметка о состоянии. Всегда находится сверху по центру -->
-                        <div class="my-works__comment my-works__comment_none rus__show_block">В разработке</div>
-                        <div class="my-works__comment my-works__comment_none eng__hide_block">In developing</div>
-                        <!-- Модифицировать карточку, создать класс BG-img для адаптивного отображения картинки -->
-                        <img src="img/My-works/Petlib.JPG" alt="Petlib" class="my-works__img">
-                        <!-- ссылка на работу при клике на изображение -->
-                        <a target="_blank" class="my-works__translucent-box_white" href="https://jx-29.github.io/Petlib"></a> 
+                        <img src="img/My-works/NotesApp.png" alt="NotesApp" class="my-works__img">
+                        <a target="_blank" class="my-works__translucent-box_white" href="NotesApp/index.html"></a>
                         <div class="my-works__translucent-box_black">
                             <div class="my-works__text-wrapper">
-                                <h3 class="my-works__title">Petlib</h3>
+                                <h3 class="my-works__title">NotesApp</h3>
                                 <div class="my-works__skills-wrapper">
                                     <div class="skill skill__card">HTML5</div>
                                     <div class="skill skill__card">CSS3</div>
@@ -156,17 +129,33 @@
                                 </div>
                             </div>
                             <ul class="my-works__link-wrapper">
-                                <li class="my-works__link"><a class="button button__card" href="https://jx-29.github.io/Petlib" target="_blank"><i class="fas fa-link"></i></a></li> 
-                                <li class="my-works__link"><a class="button button__card" href="https://jx-29.github.io/Petlib" target="_blank"><i class="fab fa-github"></i></a></li>
+                                <li class="my-works__link"><a class="button button__card" href="NotesApp/index.html" target="_blank"><i class="fas fa-link"></i></a></li>
+                                <li class="my-works__link"><a class="button button__card" href="https://github.com/JX-29/NotesApp" target="_blank"><i class="fab fa-github"></i></a></li>
                             </ul>
                         </div>
                     </section>
                     <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
-                    <div class="my-works__comment rus__show_block">В разработке</div>
-                    <div class="my-works__comment eng__hide_block">In developing</div>
-                    <img src="img/My-works/Card-img-urvest.JPG" alt="Лэндинг Юрвест" class="my-works__img">
-                    <!-- ссылка на работу при клике на изображение -->
-                    <a class="my-works__translucent-box_white" target="_blank" href="http://юрвест-право.рф/"></a> 
+                        <img src="img/My-works/Income-Trade.png" alt="Инком-Трейд" class="my-works__img">
+                        <a target="_blank" class="my-works__translucent-box_white" href="https://jx-29.github.io/Petlib"></a>
+                        <div class="my-works__translucent-box_black">
+                            <div class="my-works__text-wrapper">
+                                <h3 class="my-works__title rus__show_block">Лендинг "Инком-Трейд"</h3>
+                                <h3 class="my-works__title eng__hide_block">"Income-Trade" landing page</h3>
+                                <div class="my-works__skills-wrapper">
+                                    <div class="skill skill__card">HTML5</div>
+                                    <div class="skill skill__card">CSS3</div>
+                                    <div class="skill skill__card">JS</div>
+                                </div>
+                            </div>
+                            <ul class="my-works__link-wrapper">
+                                <li class="my-works__link"><a class="button button__card" href="http://incometrade-realt.ru/" target="_blank"><i class="fas fa-link"></i></a></li>
+                                <li class="my-works__link"><a class="button button__card" href="https://github.com/JX-29/Income-Trade" target="_blank"><i class="fab fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
+                    <img src="img/My-works/Urvest.png" alt="Лэндинг Юрвест" class="my-works__img">
+                    <a class="my-works__translucent-box_white" target="_blank" href="http://urvest-law.ru/"></a>
                     <div class="my-works__translucent-box_black">
                         <div class="my-works__text-wrapper">
                             <h3 class="my-works__title rus__show_block">Лэндинг "Юрвест"</h3>
@@ -178,7 +167,7 @@
                             </div>
                         </div>
                         <ul class="my-works__link-wrapper">
-                            <li class="my-works__link"><a class="button button__card" href="http://юрвест-право.рф/" target="_blank"><i class="fas fa-link"></i></a></li>
+                            <li class="my-works__link"><a class="button button__card" href="http://urvest-law.ru/" target="_blank"><i class="fas fa-link"></i></a></li>
                             <li class="my-works__link"><a class="button button__card" href="https://github.com/JX-29/Urvest" target="_blank"><i class="fab fa-github"></i></a></li>
                         </ul>
                     </div>
@@ -186,13 +175,13 @@
                     <section class="my-works__card fadeInUp wow" data-wow-duration="0.8s">
                         <div class="my-works__comment rus__show_block">В разработке</div>
                         <div class="my-works__comment eng__hide_block">In developing</div>
-                        <img src="img/My-works/Income-trade.JPG" alt="Лендинг Инком-Трейд" class="my-works__img">
+                        <img src="img/My-works/WebExcel.jpg" alt="Проект WebExcel" class="my-works__img">
                         <!-- ссылка на работу при клике на изображение -->
-                        <a class="my-works__translucent-box_white" href="income-trade-krd.ru" target="_blank"></a> 
+                        <a class="my-works__translucent-box_white" href="#" target="_blank"></a>
                         <div class="my-works__translucent-box_black">
                             <div class="my-works__text-wrapper">
-                                <h3 class="my-works__title rus__show_block">Лэндинг "Инком-Трейд"</h3>
-                                <h3 class="my-works__title eng__hide_block">"Incom-Trade" landing page</h3>
+                                <h3 class="my-works__title rus__show_block">WebExcel</h3>
+                                <h3 class="my-works__title eng__hide_block">WebExcel</h3>
                                 <div class="my-works__skills-wrapper">
                                     <div class="skill skill__card">HTML5</div>
                                     <div class="skill skill__card">CSS3</div>
@@ -200,8 +189,8 @@
                                 </div>
                             </div>
                             <ul class="my-works__link-wrapper">
-                                <li class="my-works__link"><a class="button button__card" href="income-trade-krd.ru" target="_blank"><i class="fas fa-link"></i></a></li>
-                                <li class="my-works__link"><a class="button button__card" href="https://github.com/JX-29/Income-trade" target="_blank"><i class="fab fa-github"></i></a></li>
+                                <li class="my-works__link"><a class="button button__card" href="#" target="_blank"><i class="fas fa-link"></i></a></li>
+                                <li class="my-works__link"><a class="button button__card" href="#" target="_blank"><i class="fab fa-github"></i></a></li>
                             </ul>
                         </div>
                     </section>
