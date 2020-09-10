@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Инком-Трейд</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="shortcut icon" href="img/Window%20icon/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://kit.fontawesome.com/a0917489ee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="header__navbar d-flex justify-content-between align-items-center">
+                    <a href="" class="header__logo">
+                        <img src="img/header/logo.png" alt="Инком Трейд" class="header__logo-img">
+                    </a>
+                    <ul class="menu d-flex">
+                        <li class="menu__item"><a href="#how-we-work" class="menu__link">Как мы работаем</a></li>
+                        <li class="menu__item"><a href="#our-advantages" class="menu__link">Наши преимущества</a></li>
+                        <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+                    </ul>
+                    <div class="burger">
+                        <span class="burger__icon"><i class="fas fa-bars"></i></span>
+                    </div>
+                    <div class="mobile-menu">
+                        <ul class="mobile-menu__items">
+                            <li class="mobile-menu__item"><a href="#how-we-work" class="mobile-menu__link">Как мы работаем</a></li>
+                            <li class="mobile-menu__item"><a href="#our-advantages" class="mobile-menu__link">Наши преимущества</a></li>
+                            <li class="mobile-menu__item"><a href="#contacts" class="mobile-menu__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section id="first-screen" class="first-screen">
+        <div class="container">
+            <div class="row d-md-flex justify-content-around">
+                <div class="col-10 col-lg-4">
+                    <h1 class="first-screen__title">Мы найдем идеальную недвижимость для вас</h1>
+                    <div class="first-screen__desc">Операции с недвижимостью несут много стресса и проблем для людей, которые этим никогда не занимались. <br><br>
+                    Наша компания помогает покупателю и продавцу недвижимости найти друг друга и провести сделку без неожиданных неприятностей.</div>
+                    <a href="#contacts" class=" btn first-screen__btn">Заказать консультацию</a>
+                </div>
+                <div class="col-5 col-md-6 d-none d-lg-flex align-items-center">
+                    <img src="img/first-screen/first-screen-img.jpg" alt="Недвижимость в Краснодаре" class="first-screen__img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="how-we-work" class="how-we-work">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h2 class="how-we-work__title">Как мы работаем</h2>
+                <div class="how-we-work__card-wrapper col-12 col-sm-11">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-sm-10 col-lg-4 info-card">
+                            <div class="info-card__body">
+                                <div class="info-card__icon"><i class="fas fa-comments-dollar"></i></div>
+                                <h3 class="info-card__title">Обратитесь к нам с предложением</h3>
+                                <div class="info-card__desc">Расскажите нам о том, какую недвижимость вы хотите купить или продать</div>
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <a class="btn  info-card__btn" href="#contacts">Обратиться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-10 col-lg-4 info-card">
+                            <div class="info-card__body">
+                                <div class="info-card__icon"><i class="fas fa-search"></i></div>
+                                <h3 class="info-card__title">Ознакомьтесь с вариантами</h3>
+                                <div class="info-card__desc">Наша компания займется поиском человека, которому интересна сделка с вами</div>
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <a class="btn info-card__btn" href="#contacts">Ознакомиться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-10 col-lg-4 info-card">
+                            <div class="info-card__body">
+                                <div class="info-card__icon"><i class="fas fa-handshake"></i></div>
+                                <h3 class="info-card__title">Заключите сделку c нашим участием</h3>
+                                <div class="info-card__desc">Мы подготовим все документы и поможем безопасно провети вашу сделку</div>
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <a class="btn info-card__btn" href="#contacts">Позвонить агенту</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="our-advantages" class="our-advantages">
+        <div class="container">
+            <div class="our-advantages__body">
+                <div class="row d-flex justify-content-start">
+                    <div class="col-12 col-sm-11 col-lg-7">
+                        <h2 class="our-advantages__title">Мы найдем предложение для каждого клиента</h2>
+                        <div class="our-advantages__subtitle">Благодаря обширной базе наших клиентов, мы легко сможем найти интересующее вас предложение и поможем заключить сделку.</div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-end">
+                    <div class="col-12 col-sm-11 col-lg-8">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="advantage">
+                                    <div class="advantage__title-wrapper d-flex justify-content-start align-items-center">
+                                        <div class="advantage__icon"><i class="fas fa-unlock-alt"></i></div>
+                                        <div class="advantage__title">Безопасность</div>
+                                    </div>
+                                    <div class="advantage__desc">
+                                        Любая сделка на рынке недвижимости для неопытного человека - это большой риск, а цена ошибки измеряется немалыми сумами. <br><br>
+                                        ООО "Инком-Трейд" гарантирует безопасность проведения сделки и честные условия обоим сторонам.
+                                    </div>
+                                </div>
+                                <div class="advantage">
+                                    <div class="advantage__title-wrapper d-flex justify-content-start align-items-center">
+                                        <div class="advantage__icon"><i class="far fa-clock"></i></div>
+                                        <div class="advantage__title">Скорость</div>
+                                    </div>
+                                    <div class="advantage__desc">
+                                        Наша компания обладает большими базами клиентов, мы гарантированно найдем покупателя вашей недвижимости или продавца, заинтересованного в приобретении.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="advantage">
+                                    <div class="advantage__title-wrapper d-flex justify-content-start align-items-center">
+                                        <div class="advantage__icon"><i class="fas fa-city"></i></div>
+                                        <div class="advantage__title">Выбор</div>
+                                    </div>
+                                    <div class="advantage__desc">
+                                        На данный момент Краснодар активно застраивается, появляется множество предложений по покупке новостроек от разных застройщиков.<br><br>
+                                        Мы можем найти интересующую вас недвижимость городе Краснодаре.
+                                        <br class="d-xl-inline d-none "><br>
+                                    </div>
+                                </div>
+                                <div class="advantage">
+                                    <div class="advantage__title-wrapper d-flex justify-content-start align-items-center">
+                                        <div class="advantage__icon"><i class="fas fa-money-bill-wave"></i></div>
+                                        <div class="advantage__title">Гибкая ставка</div>
+                                    </div>
+                                    <div class="advantage__desc">
+                                        Мы рассматриваем каждое предложение индивидуально и для каждой сделки подбираем ставку, приемлемую для наших клиентов.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h2 class="contacts__title">Нужна помощь?</h2>
+                    <div class="contacts__subtitle">Свяжитесь с нами, мы поможем найти нужное вам предложение и провести сделку без лишних рисков.</div>
+                    <a href="tel:89183477272" class="contacts__info-wrapper"><span class="contacts__icon"><i class="fas fa-phone-alt"></i></span><span class="contacts__text">+7(918)34-772-72</span></a>
+                    <div class="contacts__address">Краснодар,<br>
+                    улица Российская 72/1</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <form class="contact-form" action="https://formspree.io/moqkpaog" method="post">
+                        <div class="form-group">
+                            <label for="FIO">ФИО</label>
+                            <input type="text" class="form-control" id="FIO" aria-describedby="emailHelp" placeholder="Ваше ФИО" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Телефон</label>
+                            <input type="tel" class="form-control" placeholder="Ваше телефон" id="tel" placeholder="Ваш номер" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Ваш Email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="text">Сообщение</label>
+                            <textarea class="form-control" rows="3" placeholder="Сообщение" id="text"></textarea>
+                        </div>
+                        <button type="submit" class="btn contact-form__btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="JS/mobile-menu.js"></script>
+</main>
+
+</body>
+
+</html>
+
